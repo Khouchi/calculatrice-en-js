@@ -32,35 +32,38 @@ function devision (a , b){
     return a / b;
 }
 try{
-    let chiffre1=prompt("rentre ton premier chiffre ");
-    let chiffre2=prompt("rentre ton deuxieme chiffre ");
-
-   
-
+    let chiffre1=parseInt(prompt("rentre ton premier chiffre "));
+    let chiffre2=parseInt(prompt("rentre ton deuxieme chiffre "));
     let calcul=prompt(
-        "choisissez un fonction parmis les suivant:1 = addition,2 = soustraction ,3 = multiplication, 4 = division"
+        "choisissez un fonction parmis les suivant:\n 1 = addition \n 2 = soustraction \n 3 = multiplication \n 4 = division"
     );
     calcul=+calcul;
     
     switch(calcul){
         case 1:
-            alert(addition (chiffre1 + chiffre2));
+            alert(addition (chiffre1 , chiffre2));
              
-            break
+            break;
         case 2:
-            alert(soustraction(chiffre1 - chiffre2));
-            break
+            alert(soustraction(chiffre1 , chiffre2));
+            break;
         case 3:
-            alert(multiplication(chiffre1 * chiffre2));
-            break
+            alert(multiplication(chiffre1 , chiffre2));
+            break;
         case 4:
-            alert(devision(chiffre1 / chiffre2));
+            alert(devision(chiffre1 , chiffre2));
+            break;
+            
         default:
-            alert ("felicitation mec tes trop nuuuuul comme psg au lcd");  
+            alert ("tes trop nuuuuul comme psg au lcd")
+            
+              
 
     }
+    ;
 }
-catch{
+catch(error){
+    alert(Error)
     
 }
 
