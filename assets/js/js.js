@@ -72,7 +72,7 @@ let chiffre2;
     }
 reco = confirm("allez OM");
 }while(reco);
-
+alert("merci a bientot bg");
 
 
     
